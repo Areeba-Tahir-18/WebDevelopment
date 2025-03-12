@@ -1,0 +1,474 @@
+/*<!-- HEN BUN WEBSITE LAYOUT -->*/
+
+
+/*<!-- MY CSS PORTION (STYLING PORTION) -->*/
+
+
+    <style>
+      
+        .red-page {
+            background-color: #d62828;
+            height: 50px; 
+            width : 100%;
+        }
+
+
+
+
+        /* Top bar  section */
+        
+        .headline {
+            font-family: Arial, sans-serif;
+            background-color: #d62828;
+            text-align: center;
+            color: white;
+            margin: 0;
+            padding: 0;
+           
+        }
+        
+        .topbar {
+
+            background-color: black;
+            color: white;
+            padding: 5px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position : relative;
+            top : 30px;
+            height : 50px;
+        }
+        .topbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .logo-image {
+            height: 100px; 
+        }
+
+
+/*-----Images ---------*/
+
+
+        .image-container {
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            gap: 10px;
+            margin-top: 30px;
+            max-width: 900000px;
+           
+            
+        }
+
+        
+        .pic-box img {
+            padding : 70px 50px;
+            width: auto; 
+            height: 20000px; 
+            object-fit: cover; 
+        }
+        
+      
+        .Hotwings-portion {
+            background-color: rgb(248, 236, 218);
+            display: flex; 
+            gap: 20px; 
+            justify-content: center;
+            align-items: center; 
+            padding: 10px ; 
+            height: 400px; 
+        }
+        
+    
+
+        
+        
+        
+        .image-box {
+            background-color: white;
+             padding: 50px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 150px;
+        }
+        .image-box img {
+            background-color: white;
+            height: 150px;
+            border-radius: 10px;
+        }
+        .info-box {
+            
+            background-color: white;
+            color: black;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 10px;
+            width: 150px;
+        }
+        .banner {
+            background-color :#d62828;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .headline {
+            text-align: right;
+            flex: 1;
+            font-size: 5em;
+            font-weight: bold;
+        }
+        .headline span {
+            display: block;
+        }
+
+        .additional-text {
+            font-size: 0.4em;
+            font-weight: normal;
+            margin-top: 10px;
+        }
+
+
+
+        /*---------------Buttons-------------*/
+
+
+        .call-now {
+            background-color: white;
+            color: black;
+            padding: 15px 25px;
+            font-size: 1.2em;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            position: absolute;
+            top: 150px;
+            left: 20px;
+            text-align: left;
+            
+        }
+        
+        .call-now strong {
+            font-weight: bold; 
+            font-size: 20px;
+            text-align: right;
+        }
+        
+        .pentagon-button {
+            width: 220px;
+            height: 110px;
+            background-color: rgb(255, 255, 0);
+            color: black;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center;
+            line-height: 110px;
+            clip-path: polygon(0% 38%, 50% 0%, 100% 38%, 82% 100%, 18% 100%);
+            cursor: pointer;
+            border: none;
+        }
+
+
+
+        /*------- Deals Section-------*/
+
+        .deals-section {
+            background-color: white;
+            color: black;
+            text-align: center;
+            padding: 50px 20px;
+            margin-top: 30px;
+        }
+        .deals-section h2 {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .deals-section p {
+            font-size: 2.0em;
+        }
+        .deals-images {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .deals-images img {
+            background-color: white;
+            height: 150px;
+            width: 150px;
+            border-radius: 10px;
+        }
+
+
+
+
+        /*--------------------Order section----------------*/
+
+        .deal_orders {
+            display: flex;
+            justify-content: center;
+            gap: 70px;
+            margin-top: 20px;
+            background-color: white;
+            padding: 20px;
+            flex-wrap: nowrap;
+        }
+        
+        .deal_orders img {
+            height: 300px;
+            width: 300px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .deal-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .deal-text {
+            margin-top: 10px;
+            font-size: 1.2em;
+            font-weight: normal;
+            background-color: white;
+            color: grey;
+            padding: 10px;
+            border-radius: 5px;
+            width: 300px;
+        }
+        .rs-box {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: black;
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .white-section {
+            background-color: rgba(255, 255, 255, 1);
+        
+          padding: 50px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .more-button {
+            background-color:  black;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .center-image {
+            display: block;
+            margin: 20px auto;
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            transform: translateY(-20%);
+        }
+        .image-section {
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-top: 30px;
+            padding: 20px;
+            
+        }
+        .center-image {
+            width: 500px;
+            height: auto;
+            border-radius: 10px;
+            padding : 20px;
+            top : 100px;
+            background-color: lightgoldenrodyellow;
+        }
+        .text-box {
+           position : absolute;
+            width: 250px;
+            background-color: white;
+            color: black;
+            padding: 15px;
+            font-size: 2.0em;
+            font-weight: normal;
+            border-radius: 5px;
+            
+        }
+        .left-text {
+            left: 20px;
+            text-align: left;
+        }
+        
+        
+        .right-text {
+            position: absolute;
+            right: 0; 
+            top: 340%; 
+            transform: translateY(-10%); 
+            width: 250px; 
+            background-color: white;
+            color: black;
+            padding: 15px;
+            font-size: 2.0em;
+            font-weight: normal;
+            border-radius: 5px;
+        }
+        
+        
+
+        .text-box strong {
+           position : absolute;
+            width: 250px;
+            background-color: white;
+            color: grey;
+            padding: 0px;
+            font-size: 1.0em;
+            border-radius: 5px;
+        }
+
+        .image-section {
+            background-color: rgba(255, 255, 255, 1);
+        
+          padding: 50px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+
+
+
+
+        /*-----------Delivery section-------------*/
+
+
+       .yellow-section{
+            background-color:rgba(255, 208, 0, 0.785);
+            color: black;
+            text-align: center;
+            padding: 50px;
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+        .yellow-section p {
+            font-size: 1em; 
+            font-weight: normal; 
+            margin-top: 10px; 
+           
+        }
+
+
+        /*-----End Or Footer section-------------*/
+        
+
+        .black-section {
+            background-color:rgba(0, 0, 0, 0.803);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .black-box {
+            flex: 1;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .left {
+            text-align: left;
+            padding-left: 50px;
+        }
+        .center {
+            text-align: center;
+            top : 900px;
+        }
+        .right {
+            text-align: right;
+            padding-right: 50px;
+        }
+
+        .black-box p {
+            font-size: 0.8em; 
+            font-weight: normal; 
+            margin-top: 10px; 
+
+        }
+        
+
+        .pic-box {
+            position: relative; 
+            display: inline-block;
+        }
+        
+        .pic-box img {
+            width: 100%; 
+            height: auto;
+            display: block;
+        }
+        
+        .pic-box .btn {
+            position: absolute;
+            top: 70%; 
+            left: 30%; 
+            transform: translate(-50%, -50%); 
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight:bold;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .pic-box {
+            position: relative;
+            display : inline-block;
+        }
+        
+
+        
+        .text {
+            position: absolute;
+            top: 20%; 
+            left: 25%;
+            font-size: 25px;
+            font-weight: bold;
+            color: white; 
+            margin-bottom: 10px; 
+        }
+        
+        
+
+
+        
+        
+        
+    </style>

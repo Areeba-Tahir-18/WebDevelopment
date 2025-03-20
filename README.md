@@ -11,7 +11,7 @@
 
 -------------------------------------------------------------
 
-# Repository Structure:Folder:
+# Repository Structure:File_Folder:
 
  --> **Assignments**
 

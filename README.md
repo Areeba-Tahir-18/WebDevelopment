@@ -11,7 +11,7 @@
 
 -------------------------------------------------------------
 
-# Repository Structure:open_file_folder:
+:open_file_folder:# Repository Structure
 
  --> **Assignments**
 

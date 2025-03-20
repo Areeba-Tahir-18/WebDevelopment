@@ -1,7 +1,7 @@
-# WebDevelopment Course (h1)
+# WebDevelopment Course 
 **Name   : Areeba Tahir**  
 
-**Reg NO : SP23-BAI-010**
+**Reg No : SP23-BAI-010**
 
 **Instuctor : Usman Akram**
 
@@ -11,7 +11,7 @@
 
 -------------------------------------------------------------
 
-# Repository Structure (h2)
+# Repository Structure 
 
  --> **Assignments**
 
@@ -19,4 +19,16 @@
   -  Assignment_2
    - Assignment_3
    - Assignment_4
+
+-->**Lab Tasks**
+
+   - Lab_Task_1
+   - Lab_Task_2
+   - Lab_Task_3
+   - Lab_Task_4
+
+--> **Exams**
+
+   - Midterm
+   - Final
 

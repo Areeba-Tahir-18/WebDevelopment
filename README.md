@@ -1,11 +1,11 @@
 # WebDevelopment Course 
-## :woman_student:**Name   : Areeba Tahir**  
+## :woman_technologist: **Name   : Areeba Tahir**  
 
-**Reg No : SP23-BAI-010**
+  **Reg No : SP23-BAI-010**
 
-**Instuctor : Usman Akram**
+  **Instuctor : Usman Akram**
 
-**COMSATS UNIVERSITY ISLAMABAD**
+  **COMSATS UNIVERSITY ISLAMABAD**
 
 
 

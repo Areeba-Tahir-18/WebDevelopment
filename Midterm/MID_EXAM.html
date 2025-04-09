@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Topbar */
+.topbar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.topbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.topbar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.logo-image {
+    width: 100px;
+    height: auto;
+}
+
+/* Mega Menu */
+.mega-menu-parent {
+    position: relative;
+}
+
+#megaMenuToggle {
+    background-color: #444;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#megaMenuToggle:hover {
+    background-color: #555;
+}
+
+.mega-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: yellow;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    min-width: 250px;
+    z-index: 1000;
+}
+
+.mega-menu .task {
+    margin-bottom: 15px;
+}
+
+.mega-menu .task h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.mega-menu .task p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.mega-menu .task a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.mega-menu .task a:hover {
+    text-decoration: underline;
+}
+
+/* Show Mega Menu when hovering over the menu item */
+.mega-menu-parent:hover .mega-menu {
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .topbar a {
+        margin: 10px 0;
+    }
+
+    .mega-menu {
+        position: relative;
+        top: 0;
+    }
+
+    #megaMenuToggle {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+.red-page {
+    background-color: #d62828; /* Red color */
+    height: 50px; /* Adjust height as needed */
+    width: 100%;
+}
+
+.headline {
+    font-family: Arial, sans-serif;
+    background-color: #d62828;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+   
+        }
+
+.topbar {
+
+    background-color: black;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position : relative;
+    top : 30px;
+    height : 50px;
+}
+.topbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.logo-image {
+    height: 100px; 
+}
+.image-container {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-top: 30px;
+    max-width: 900000px;
+   /* Increase max-width as needed */
+    
+}
+
+
+.pic-box img {
+    padding : 70px 50px;
+    width: auto; /* Adjust width as needed */
+    height: 20000px; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures images fit properly */
+}
+
+
+.Hotwings-portion {
+    background-color: rgb(248, 236, 218);
+    display: flex; /* Places images in a row */
+    gap: 20px; /* Adds space between images */
+    justify-content: center;
+    align-items: center; /* Aligns images vertically */
+    padding: 10px ; /* Adds vertical space (increase as needed) */
+    height: 400px; /* Set a fixed height (adjust as needed) */
+}
+
+
+
+
+
+
+.image-box {
+    background-color: white;
+     padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+.image-box img {
+    background-color: white;
+    height: 150px;
+    border-radius: 10px;
+}
+.info-box {
+    
+    background-color: white;
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+    width: 150px;
+}
+.banner {
+    background-color :#d62828;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.headline {
+    text-align: right;
+    flex: 1;
+    font-size: 5em;
+    font-weight: bold;
+}
+.headline span {
+    display: block;
+}
+
+.additional-text {
+    font-size: 0.4em;
+    font-weight: normal;
+    margin-top: 10px;
+}
+.call-now {
+    background-color: white;
+    color: black;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    text-align: left;
+    
+}
+
+.call-now strong {
+    font-weight: bold; /* Makes the number bold */
+    font-size: 20px;
+    text-align: right; /* Increase size if needed */
+}
+
+.pentagon-button {
+    width: 220px;
+    height: 110px;
+    background-color: rgb(255, 255, 0);
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 110px;
+    clip-path: polygon(0% 38%, 50% 0%, 100% 38%, 82% 100%, 18% 100%);
+    cursor: pointer;
+    border: none;
+}
+
+.deals-section {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 30px;
+}
+.deals-section h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.deals-section p {
+    font-size: 2.0em;
+}
+.deals-images {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.deals-images img {
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.deal_orders {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    flex-wrap: nowrap;
+}
+
+.deal_orders img {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.deal-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.deal-text {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: normal;
+    background-color: white;
+    color: grey;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+}
+.rs-box {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.white-section {
+    background-color: rgba(255, 255, 255, 1);
+
+  padding: 50px;
+    text-align: center;
+    margin-top: 30px;
+}
+.more-button {
+    background-color:  black;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.center-image {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    transform: translateY(-20%);
+}
+.image-section {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 30px;
+    padding: 20px;
+    
+}
+.center-image {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    padding : 20px;
+    top : 100px;
+    background-color: lightgoldenrodyellow;
+}
+.text-box {
+   position : absolute;
+    width: 250px;
+    background-color: white;
+    color: black;
+    padding: 15px;
+    font-size: 2.0em;
+    font-weight: normal;
+    border-radius: 5px;
+    
+}
+.left-text {
+    left: 20px;
+    text-align: left;
+}
+
+
+.right-text {
+    position: absolute;
+    right: 0; /* Aligns text to the right side */
+    top: 340%; /* Adjust based on image height */
+    transform: translateY(-10%); /* Centers text vertically */
+    width: 250px; /* Keeps text box size consistent */
+    background-color: white;
+    color: black;
+    padding: 15px;
+    font-size: 2.0em;
+    font-weight: normal;
+    border-radius: 5px;
+}
+
+
+
+.text-box strong {
+   position : absolute;
+    width: 250px;
+    background-color: white;
+    color: grey;
+    padding: 0px;
+    font-size: 1.0em;
+    border-radius: 5px;
+}
+
+.image-section {
+    background-color: rgba(255, 255, 255, 1);
+
+  padding: 50px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.yellow-section{
+    background-color:rgba(255, 208, 0, 0.785);
+    color: black;
+    text-align: center;
+    padding: 50px;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.yellow-section p {
+    font-size: 1em; 
+    font-weight: normal; 
+    margin-top: 10px; 
+   
+}
+
+
+.black-section {
+    background-color:rgba(0, 0, 0, 0.803);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+.black-box {
+    flex: 1;
+    font-size: 2em;
+    font-weight: bold;
+}
+.left {
+    text-align: left;
+    padding-left: 50px;
+}
+.center {
+    text-align: center;
+    top : 900px;
+}
+.right {
+    text-align: right;
+    padding-right: 50px;
+}
+
+.black-box p {
+    font-size: 0.8em; 
+    font-weight: normal; 
+    margin-top: 10px; 
+
+}
+
+
+.pic-box {
+    position: relative; /* Makes this a reference for absolute positioning */
+    display: inline-block;
+}
+
+.pic-box img {
+    width: 100%; /* Ensures image scales properly */
+    height: auto;
+    display: block;
+}
+
+.pic-box .btn {
+    position: absolute;
+    top: 70%; /* Moves button to the middle of the image */
+    left: 30%; /* Moves button to the middle horizontally */
+    transform: translate(-50%, -50%); /* Centers the button */
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight:bold;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pic-box {
+    position: relative;
+    display : inline-block;
+}
+
+
+
+.text {
+    position: absolute;
+    top: 20%; /* Moves button to the middle of the image */
+    left: 25%;
+    font-size: 25px;
+    font-weight: bold;
+    color: white; /* Text color */
+    margin-bottom: 10px; /* Adds space before the image */
+}
+
+
+
+
+
+
+</style>
+</head>
+<body>
+    
+
+</html><div class="topbar">
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">Exclusive Deals</a>
+    <img class="logo-image" src="https://i0.wp.com/hennbun.pk/wp-content/uploads/2022/01/Transparent-Logo-04.png?fit=100%2C84&ssl=1" alt="Hen Buns">
+    <a href="#">Blog</a>
+    <a href="#">Location</a>
+    <a href="#">Contact Us</a>
+
+    <!-- Menu Item -->
+    <div class="mega-menu-parent">
+        <a href="#" id="megaMenuToggle">Previous Tasks</a>
+        <div class="mega-menu" id="megaMenu">
+            <div class="task">
+                <h4>Assignment 1</h4>
+                <p>Making my Resume including all information</p>
+                <a href="Assignment1.html" target="_blank">Open Assignment1</a>s
+            </div>
+            <div class="task">
+                <h4>Assignment 2</h4>
+                <p>E-Commerce Landing Page of Hen Bun website</p>
+                <a href="Assignment2.html" target="_blank">Open Assignment2</a>
+            </div>
+            <div class="task">
+                <h4>Labtask1</h4>
+                <p>applying the BOOTSTRAP on my henn bun website </p>
+                <a href="Labtask1.html" target="_blank">Open Labtask1</a>
+                <a href="Labtask1.css" target="_blank">Open Labtask1</a>
+            </div>
+            <div class="task">
+                <h4>Lab Task 2</h4>
+                <p>Making a checkout page for my website</p>
+                <a href="labtask2.html" target="_blank">Open Labtask2</a>
+                <a href="labtask2.css" target="_blank">Open labtask2</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="banner">
+    <img src="https://i0.wp.com/hennbun.pk/wp-content/uploads/2022/01/full-broast.png?fit=761%2C650&ssl=1" alt="Fast Food" class="fast-food-img">
+    <div class="headline">
+        <span>FULL BROAST</span>
+        <span>ON YOUR WAY</span>
+        <div class="additional-text">
+            <span>2 LEGS, 2 WINGS, 2 BREASTS, 2 THIGHS</span>
+            <span>FRIES ,LARGE GARLIC DIP</span>
+        </div>
+    </div>
+</div>
+
+<div class="white-section">
+    <div class="image-container">
+        <div class="image-box">
+            <img src="https://i0.wp.com/hennbun.pk/wp-content/uploads/2022/01/Broast.jpg?resize=600%2C600&ssl=1" alt="Broast">
+            <div class="info-box">Broast</div>
+        </div>
+        <div class="image-box">
+            <img src="https://i0.wp.com/hennbun.pk/wp-content/uploads/2022/01/Deals.jpg?resize=300%2C300&ssl=1" alt="Deals">
+            <div class="info-box">Deals</div>
+        </div>
+        <div class="image-box">
+            <img src="https://i0.wp.com/hennbun.pk/wp-content/uploads/2022/01/Drinks.jpg?resize=300%2C300&ssl=1" alt="Drinks">
+            <div class="info-box">Drinks</div>
+        </div>
+        <div class="image-box">
+            <img src="https://i0.wp.com/hennbun.pk/wp-content/uploads/2022/01/Fries.jpg?resize=300%2C300&ssl=1" alt="Fries">
+            <div class="info-box">Fries</div>
+        </div>
+        <div class="image-box">
+            <img src="https://i0.wp.com/hennbun.pk/wp-content/uploads/2022/01/Nuggets-Dips.jpg?resize=300%2C300&ssl=1" alt="Nuggets & Dips">
+            <div class="info-box">Nuggets & Dips</div>
+        </div>
+        <div class="image-box">
+            <img src="https://i0.wp.com/hennbun.pk/wp-content/uploads/2022/01/Tea.jpg?resize=300%2C300&ssl=1" alt="Tea">
+            <div class="info-box">Tea</div>
+        </div>
+    </div>
+</div>
+
+<div class="Black-portion">
+    <div class="Hotwings-portion">
+        <div class="pic-box">
+             <p class = "text" > Bhook lagi hai? <br><strong>SPICY BROAST</strong><br>Abhi mangwaoo</p>
+            <button type="button" class="btn btn-light">Order Now</button>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi2pkeO4c_HkZ6n1Ds4A9jtfP20euUTs5IpxpaXnJtswHadTE0iGBtF4Ym3rgCtdawk5Y&usqp=CAU" alt="Bhook">
+            
+        </div>
+        <div class="pic-box">
+            <p class = "text" > Crispy <br><strong>CRUNCHY</strong><br>Broast</p>
+            <button type="button" class="btn btn-light">Order Now</button>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj7FHcJmfMTFFPXcWhZjGVAWGJgS6Ef8LTdQzZ7I6ehkwhdOHy_tkngUQtYtjk6PvZD7g&usqp=CAU" alt="Crispy">
+            
+        </div>
+        <div class="pic-box">
+            <p class = "text" > You Wanna <br><strong>PIECE </strong><br>Of Me</p>
+            <button type="button" class="btn btn-light">Order Now</button>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLF0HK6_CTxTx4AcAWQ2iWCWKhtbTnsP2zP72gRhsQOnbZrTB1woG4-imLucUcO-ZKR6k&usqp=CAU" alt="Piece">
+           
+        </div>
+        </div>
+
+        </div>
+
+<div class="deals-section">
+    <h2>WE’VE GOT DEALS</h2>
+    <p>Hand-crafted fresh to order. Spicy Broast served with fresh garlic dip, bun & fries.</p>
+</div>
+
+
+
+
+<div class="deal_orders">
+<div class="deal-box">
+    
+    <img src="https://i0.wp.com/hennbun.pk/wp-content/uploads/2022/01/Artboard-1.jpg?resize=600%2C600&ssl=1" alt="Deal 1">
+    <div class="deal-text">
+        <b>DESIRE DEAL</b><br>
+        1 LEG, 1 THIGH, 1 BREAST, 1 WING, 1 BUN, FRIES, 1 LARGE GARLIC DIP, 500 ML DRINK
+    </div>
+</div>
+<div class="deal-box">
+    <img src="https://i0.wp.com/hennbun.pk/wp-content/uploads/2022/01/Artboard-2.jpg?resize=600%2C600&ssl=1" alt="Deal 2">
+    <div class="deal-text">
+        <b>PRIME DUO DEAL</b><br>
+        2 LEGS, 2 THIGHS, 2 BREASTS, 2 WINGS, 2 BUNS, FRIES, 2 LARGE GARLIC DIPS, 1.5 LTR DRINK
+    </div>
+</div>
+<div class="deal-box">
+    <img src="https://i0.wp.com/hennbun.pk/wp-content/uploads/2022/01/Artboard-3.jpg?resize=600%2C600&ssl=1" alt="Deal 3">
+    <div class="deal-text">
+       <b> SUPREME FAMILY DEAL</b><br>
+        4 LEGS, 4 THIGHS, 4 BREASTS, 4 WINGS, 4 BUNS, FRIES, 4 LARGE GARLIC DIPS
+    </div>
+</div>
+<div class="deal-box">
+    <img src="https://i0.wp.com/hennbun.pk/wp-content/uploads/2022/01/Artboard-4.jpg?resize=600%2C600&ssl=1" alt="Deal 4">
+    <div class="deal-text">
+        <b>GRAND FIESTA DEAL </b><br>
+        8 LEGS, 8 THIGHS, 8 BREASTS, 8 WINGS, 8 BUNS, FRIES, 8 LARGE GARLIC DIPS
+    </div>
+</div>
+</div>
+
+<div class="image-section">
+<div class="text-box left-text">
+    <b>2 Convenient</b><br>
+    <b>Pick Up Spots</b><br>
+   <br> <strong>HEN N’BUN branches in Lahore:<br>
+    1- R2 Johar Town, Lahore<br>
+    2- Raiwind Road, Lahore</strong>
+</div>
+</div>
+
+
+
+<img class="center-image" src="https://i0.wp.com/hennbun.pk/wp-content/uploads/2022/01/Untitled-2.png?resize=600%2C600&ssl=1" alt="More Image">
+<div class="text-box right-text">
+    <b>Fast Home Delivery</b> <br>
+    <br><strong>Just order and wait for a while, we’ll be there at your door.</strong>
+</div>
+</div>
+
+</div>
+
+
+<div class="yellow-section">
+<h2>Love Broast? Like Deals?</h2>
+<p>Be the first to know about our newest menu items and latest offers.</p>
+</div>
+
+</div>
+
+
+<div class="black-section">
+<div class="black-box left">
+    Information
+    <p>Our Menu<br>Our Blog<br>Contact Us<br>      <br> f <br>  </p>
+</div>
+<div class="black-box center">
+    Extras
+<p>Privacy Ploicy</p>
+</div>
+<div class="black-box right">
+    Get in Touch
+<p> Mon - Sun: 12:00 PM - 2:00 AM<br>03041110405<br>info@hunben.pk <br>      <br>    © 2025 All rights reserved!</p>
+</div>
+</div>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+<script src="mid_term.js" ></script>
+</body>

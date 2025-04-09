@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy Food</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-image: url('https://st4.depositphotos.com/3917667/27189/i/1600/depositphotos_271892980-stock-photo-fast-food-dish-on-black.jpg');
+        }
+        form {
+            background-color:saddlebrown;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 350px;
+            margin: auto;
+            position: relative;
+            margin-left: 90px;
+            
+        }
+        .title{
+
+          margin-left: 120px;
+
+            color:#218838;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #cccccc63;
+        }
+        input:invalid {
+            border-color: red;
+        }
+        span.error {
+            color: red;
+            font-size: 0.9em;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1 class = "title">Welcome to Henn'Bun</h1>
+    <form id="checkoutForm">
+        <label>Full Name:</label>
+        <input type="text" id="name" required pattern="[A-Za-z\s]+" title="Only alphabets allowed.">
+        <span class="error" id="nameError"></span>
+
+        <label>Email:</label>
+        <input type="email" id="email" required>
+        <span class="error" id="emailError"></span>
+
+        <label>Phone Number:</label>
+        <input type="text" id="phone" required pattern="\d{10,15}" title="Only digits, 10-15 characters long.">
+        <span class="error" id="phoneError"></span>
+
+        <label>Address:</label>
+        <input type="text" id="address" required>
+        <span class="error" id="addressError"></span>
+
+        <label>Credit Card Number:</label>
+        <input type="text" id="cardNumber" required pattern="\d{16}" title="Must be exactly 16 digits.">
+        <span class="error" id="cardError"></span>
+
+        <label>Expiry Date:</label>
+        <input type="month" id="expiry" required min="2024-04">
+        <span class="error" id="expiryError"></span>
+
+        <label>CVV:</label>
+        <input type="text" id="cvv" required pattern="\d{3}" title="Must be exactly 3 digits.">
+        <span class="error" id="cvvError"></span>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="labTask2.js"></script>
+</body>
+</html>
